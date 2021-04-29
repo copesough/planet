@@ -120,7 +120,8 @@ article - "карточка" услуги
 
 header, main, footer, .banner
 {
-	max-width: 900px;
+	max-width: 1400px;
+	min-width: 900px;
 	margin: 0 auto;
 }
 
@@ -145,7 +146,8 @@ footer {}
 
 header .logo
 {
-	height: 60px;
+	height: 110px;
+	background: linear-gradient(#1059fc, #dde7ff);
 }
 
 header .logo>div
@@ -195,7 +197,7 @@ header .number {}
 }
 footer
 {
-	background: #000;
+	background: #115a96;
 	padding: 10px 0;
 
 
