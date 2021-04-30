@@ -1,4 +1,6 @@
 
+/* #64bb46 */
+
 p
 {
 	margin: 0;
@@ -43,7 +45,8 @@ header .logo
 .mainList ul.menu
 {
 	display: flex;
-	background: rgb(54, 70, 87);
+	background: #1060b0;
+	position: relative;
 	}
 
 
@@ -62,16 +65,29 @@ header .logo
 	font-size: 12px;
 	margin: 0 5px;
 	padding: 6px 0;
+
 }
 
 .mainList .menu li
 {
-	position: relative;
+	
 }
 .mainList .menu li:hover
 {
-	background: #64bb46;
+	/*background: white;*/
 }
+
+.mainList .menu li svg
+{
+	transition: transform 0.5s;
+}
+
+.mainList .menu li:hover svg
+{
+	transform: rotate(-90deg);
+}
+
+
 
 /*
 .window - всплывающее окно со списком услуг
@@ -86,6 +102,22 @@ article - "карточка" услуги
 	border: 2px solid rgb(54, 70, 87);
 	
 }
+
+.mainList li .line{
+	margin-left: 50%;
+	width: 0;
+	height: 3px;
+	background: white;
+	transition: width 0.5s, margin 0.5s;
+
+}
+
+.mainList li:hover .line{
+	width: 100%;
+	margin-left: 0;
+
+}
+
 .mainList .menu .window .col
 {
 	display: flex;
