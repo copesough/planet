@@ -17,6 +17,10 @@ rgb(54, 70, 87)
 
 .mainMenu .menu  {display: flex; justify-content: center;}
 
+.mainList
+{
+	margin: 0 0 5px 0;
+}
 .mainList .menu {display: flex; justify-content: center;}
 header .logo 
  {
@@ -32,7 +36,7 @@ header .logo
 {list-style-type: none;}
 .mainMenu .menu li
 {
-	padding: 5px 0;
+	padding: 11px 5px;
 }
 .mainMenu .menu li a
 {
@@ -51,20 +55,40 @@ header .logo
 
 
 
+
+
+/*
+.window - всплывающее окно со списком услуг
+article - "карточка" услуги
+*/
+
 .mainList li .window
 {position: absolute;
 	display: none;
+	flex-wrap: wrap;
 	z-index: 2;
-	background: gray;
+	background: white;
+	top: 45px;
+	left: 10%;
+	width: 80%;
+	padding: 7px;
+	border: 2px solid rgb(154, 170, 187);
 }
 
+.mainList li:hover .window,
+.mainList .menu .window:hover
+{
+	display: flex;
+	
+	
+}
 
 .mainList .menu a 
 {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0 5px;
-	padding: 6px 0;
+	padding: 11px 0;
 
 }
 
@@ -89,21 +113,17 @@ header .logo
 
 
 
-/*
-.window - всплывающее окно со списком услуг
-article - "карточка" услуги
-*/
-.mainList li:hover .window,
-.mainList .menu .window:hover
+
+
+.mainList li .line
 {
-	display: flex;
-	top: 24px;
-	left: 20px;
-	border: 2px solid rgb(54, 70, 87);
-	
+	width : 100%;
+	height: 3px;
 }
 
-.mainList li .line{
+
+
+.mainList li .line>div{
 	margin-left: 50%;
 	width: 0;
 	height: 3px;
@@ -112,7 +132,7 @@ article - "карточка" услуги
 
 }
 
-.mainList li:hover .line{
+.mainList li:hover .line>div{
 	width: 100%;
 	margin-left: 0;
 
@@ -131,18 +151,20 @@ article - "карточка" услуги
 .mainList .menu .window article
 {
 	margin: 5px;
-	border: 1px solid gray;
-	background: #d4d4d4;
+	border: 1px dashed gray;
+	background: white;
 }
 /*---------------!!!!!!!------*/
-.mainList .menu .window article span
+.mainList .menu .window article h4
 {
-	color: #333;
+	color: #111;
+	text-align: center;
+	font-size: 14px
 }
 
 .mainList .menu .window article p
 {
-	height: 60px;
+	
 	display: flex;
 	align-items: center;
 }
@@ -263,16 +285,40 @@ footer .block article p
 footer .block article h3
 {}
 
+
+.carousel-inner
+{
+	height: 370px;
+}
 .carousel-item
 {
 	position: relative;
 }
-main .carousel-item h3
+
+.carousel-item .descr
 {
 	position: absolute;
-	top: 0;
+	top: 30px;
+	right: 90px;
+	opacity: 0.5;
+	padding: 6px 10px;
+	background: white;
+	border-radius: 3px
 }
 
+.carousel-item img
+{margin-top: -240px;}
+
+main .carousel-item .descr h3
+{
+	color: black;
+	font-size: 26px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon
+{
+	width: 35px;
+	height: 35px;
+}
 /* page.html Страница каталога определенного вида услуг*/
 
 .serviceBanner
