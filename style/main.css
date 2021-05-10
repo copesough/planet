@@ -1,5 +1,8 @@
 
-/* #64bb46 */
+/* #64bb46 
+   #014efc
+	
+*/
 
 p
 {
@@ -49,7 +52,7 @@ header .logo
 .mainList ul.menu
 {
 	display: flex;
-	background: #1060b0;
+	background: #0e4779;
 	position: relative;
 	}
 
@@ -80,8 +83,66 @@ article - "карточка" услуги
 {
 	display: flex;
 	
+}
+
+
+/*  list  окно со списком .window.list*/
+
+.mainList li .window.list
+{position: absolute;
+	display: none;
+	flex-wrap: wrap;
+	z-index: 2;
+	background: white;
+	color: black;
+	font-weight: bold;
+	top: 45px;
+	left: 10%;
+	width: 300px;
+	padding: 7px;
+	border: 2px solid rgb(154, 170, 187);
+}
+.mainList  .window.list ul
+{
+	padding-left: 14px;
+}
+.mainList  .window.list ul a
+{
+	padding: 0;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.mainList li .window.list a
+{
+	color: black;
+}
+
+.window.list p
+{
+	border-bottom: 1px dashed black;
+	padding: 10px 0;
+}
+
+.mainList .menu .window.list  a
+{
+	padding: 0;
+}
+
+.mainList li .window.list h4
+{
+	color: black;
+}
+
+.mainList li:hover .window.list,
+.mainList .menu .window.list:hover
+{
+	display: block;
 	
 }
+
+/*-----------------------------*/
 
 .mainList .menu a 
 {
@@ -174,8 +235,8 @@ article - "карточка" услуги
 
 header, main, footer, .banner
 {
-	max-width: 1400px;
-	min-width: 900px;
+	max-width: 1490px;
+	min-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -194,8 +255,10 @@ footer {}
 .banner
 {
 	text-align: center;
-	background: #014efc;
+	background: #022d53;
 	padding: 6px 0;
+	font-weight: bold;
+	color: red;
 }
 
 header .logo
@@ -247,13 +310,14 @@ header .number {}
 	padding: 2px 7px;
 	bottom: 9px;
 	left: 20px;
+	font-size: 16px;
 
 }
 footer
 {
-	background: #115a96;
+	background: #0e4779;
 	padding: 10px 0;
-
+	color: white;
 
 
 }
@@ -274,16 +338,16 @@ footer .list
 {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 20px;
 }
 
 footer .line {justify-content: space-between;}
 
-
-footer .block article p
-{}
-footer .block article h3
-{}
+footer .line
+{
+	padding: 5px;
+}
 
 
 .carousel-inner
