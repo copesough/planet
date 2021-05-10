@@ -150,6 +150,7 @@ article - "карточка" услуги
 	font-size: 14px;
 	margin: 0 5px;
 	padding: 11px 0;
+	font-weight: bold;
 
 }
 
@@ -307,10 +308,12 @@ header .number {}
 .shopList h3
 {
 	position: absolute;
-	padding: 2px 7px;
+	padding: 5px 10px;
 	bottom: 9px;
 	left: 20px;
 	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
 
 }
 footer
