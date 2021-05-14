@@ -12,6 +12,7 @@ ul
 {
 	margin: 0;
 }
+
 /*
 353A3E 
 333
@@ -74,7 +75,7 @@ article - "карточка" услуги
 	display: none;
 	flex-wrap: wrap;
 	z-index: 2;
-	background: white;
+	background: #dfefff;
 	top: 45px;
 	left: 10%;
 	width: 80%;
@@ -110,11 +111,11 @@ article - "карточка" услуги
 	margin-left: -50px;
 	border: 2px solid rgb(154, 170, 187);
 }
-.mainList  .window.list ul
+.mainList  .window ul
 {
 	padding-left: 14px;
 }
-.mainList   .window.list ul a
+.mainList   .window ul a
 {
 	padding: 0;
 	font-style: italic;
@@ -129,7 +130,7 @@ article - "карточка" услуги
 	color: #022d53;
 }
 
-.window.list .point
+.window .point
 {
 	border-bottom: 1px dashed black;
 	padding: 5px 0;
@@ -156,7 +157,7 @@ article - "карточка" услуги
 
 /*-----------------------------*/
 
-.mainList .menu a 
+.mainList .menu li>a 
 {
 	display: inline-block;
 	font-size: 14px;
@@ -217,15 +218,28 @@ article - "карточка" услуги
 .mainList .menu .window article
 {
 	margin: 5px;
-	border: 1px dashed gray;
 	background: white;
+	padding: 5px;
 }
+
+.mainList .menu .window article img
+{
+	border: 1px solid #ccc;
+}
+
+
 /*---------------!!!!!!!------*/
 .mainList .menu .window article h4
 {
+	margin: 5px 0;
 	color: #111;
 	text-align: center;
-	font-size: 14px
+	font-size: 14px;
+}
+.mainList .menu .window article:hover
+{
+	border: 2px solid #777;
+	padding: 3px;
 }
 
 .mainList .menu .window article p

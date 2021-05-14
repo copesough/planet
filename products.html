@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,45 +14,57 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- **React библиотека -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<!-- ///конец React библиотека-->
+
 <link rel="stylesheet" type="text/css" href="/style/main.css">
+<link rel="stylesheet" type="text/css" href="/style/product.css">
 <link rel="stylesheet" type="text/css" href="/style/fonts.css">
 
 </head>
 <body>
 
 <header>
+
 	<div class="banner">
-		<a href="" title="">
+		<a href="/serve.html" title="">
 			СУПЕР СКИДКА 90% Только сегодня!
 		</a>
 	</div>
 	<div class="logo">
 		<div>
-		<a href="" title="logo">
-			<img src="" alt="">
-			г.Самара
+		<a href="/" title="logo">
+			<img src="/img/logo2.png" width="426" height="117" alt="">
 		</a>
 		</div>
-
+	<!--
 		<div style="width: 300px; font-size: 12px">
 			
-		
+	
 		<div class="input-group input-group-sm">
   			<input type="text" class="form-control" placeholder="Поиск услуг">
   			<div class="input-group-append">
-    		<button class="btn btn-success" type="submit">Поиск</button>
+    		<button class="btn btn-primary" type="submit">Поиск</button>
   			</div>
 		</div>
-
-		</div>
-
 		
-
+		</div>
+-->
+		
+		
 		<div>
-			<svg  width="32" height="32" fill="green" class="bi bi-cart2" viewBox="0 0 16 16">
+			<svg  width="32" height="32" fill="blue" class="bi bi-cart2" viewBox="0 0 16 16">
   			<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
 			</svg>
-			<span class="number">+7 905-300-85-76</span>
+			<span class="number"><b>+7 905-300-85-76</b></span>
+		</div>
+		<div>
+			<b>Мы в социальных сетях:</b>
+			<a href="https://vk.com/colorplanetsamara" title="Мы в контакте"><img src="/img/vk.png" width="60" height="60"></a>
+			<a href="https://www.instagram.com/colorplanet_samara/" title="Мы в инстаграмме"><img src="/img/inst.png" width="60" height="60"></a>
 		</div>
 	</div>
 	
@@ -62,7 +73,7 @@
 	
 	<ul class="menu">
 		<li>
-			<a href="" title="Инф">
+			<a href="/serve.html" title="Инф">
 				<i>
 					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
   					<path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
@@ -73,7 +84,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="" title="Инф">
+			<a href="/serve.html" title="Инф">
 				<i>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
   						<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
@@ -84,7 +95,7 @@
 		</li>
 		<li>
 			
-			<a href="" title="Инф">
+			<a href="/serve.html" title="Инф">
 				<i><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
  				 	<path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
 					</svg>
@@ -94,7 +105,7 @@
 		</li>
 		<li>
 			
-			<a href="" title="Инф">
+			<a href="/serve.html" title="Инф">
 				<i>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
  					 <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
@@ -104,7 +115,7 @@
 		</a>
 		</li>
 		<li>
-			<a href="" title="Инф">
+			<a href="/serve.html" title="Инф">
 				<i>
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
  					 <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
@@ -119,525 +130,372 @@
 
 	<nav class="mainList">
 		<ul class="menu">
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
-					</div>
+			<li class="relative">
+				<div class="window list">
+						<div class="point"><a href="/serve.html">Печать и копирование документов</a></div>
+						<div class="point"><a href="/serve.html">Сканирование документов</a></div>
+						<div class="point"><a href="/serve.html">Печать чертежей</a></div>
+						<div class="point"><a href="/serve.html">Твердый переплет и брошюровка</a></div>
+						<div class="point"><a href="/serve.html">Сканирование и ламинирование документов</a></div>
+						<div class="point"><a href="/serve.html">Изготовление печатей и штампов</a></div>
 				</div>
-				<a href="" title="">
+				<a href="/serve.html" title="">
+					<span>КОПИЦЕНТР
+						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+					</span>
+				</a>
+				<div class="line">
+					<div></div>
+				</div>
+			</li>
+			<li class="relative">
+				<div class="window list">
+						<p><a href="/serve.html">Фото на документы</a></p>
+						
+							<a href="/serve.html">Цифровая печать фотографий</a>
+							<ul>
+
+							<li><a href="/serve.html">Фото "Стандарт"</a></li>
+							<li><a href="/serve.html">Фото "Премиум"</a></li>
+							<li><a href="/serve.html">Инстафото</a></li>
+							<li><a href="/serve.html">Фото "Полароид"</a></li>
+							<li><a href="/serve.html">Фото с надписью</a></li>
+							<li><a href="/serve.html">Панорамный фото</a></li>
+							<li><a href="/serve.html">Фактурные фото</a></li>
+							</ul>
+						<p><a href="/serve.html">Постеры и плакаты</a></p>
+						<p><a href="/serve.html">Постеры и плакаты</a></p>
+						<a href="/serve.html">Фотокниги</a>
+						<ul>
+							<li><a href="/serve.html">Стандарт</a></li>
+							<li><a href="/serve.html">Премиум</a></li>
+							<li><a href="/serve.html">"Вконтакте"</a></li>
+							<li><a href="/serve.html">Instagram</a></li>
+							<li><a href="/serve.html">Свадебная фотокнига</a></li>
+							<li><a href="/serve.html">Фотокнига путешественника</a></li>
+							<li><a href="/serve.html">Фотокаталог</a></li>
+						</ul>
+				</div>
+				<a href="/serve.html" title="">
 					<span>ФОТОПЕЧАТЬ
 						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
   						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 							</svg>
 					</span>
 				</a>
-			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
-					</div>
+				<div class="line">
+					<div></div>
 				</div>
-				<a href="" title="">
-					<span>ФОТОКНИГИ
-						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-							</svg>
-					</span>
-				</a>
 			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
+			<li class="relative">
+				<div class="window list">
+					<div class="point">
+					<a href="/serve.html">Визитки</a>
+					<ul>
+						<li><a href="/serve.html">Эконом</a></li>
+						<li><a href="/serve.html">Дизайнерская бумага</a></li>
+						<li><a href="/serve.html">С закруглением углов</a></li>
+						<li><a href="/serve.html">Магнитный винил</a></li>
+						<li><a href="/serve.html">Бумага Majestik</a></li>
+						<li><a href="/serve.html">С ламинацией</a></li>
+					</ul>
 					</div>
-					<div class="col">
 						
+					<div class="point"><a href="/serve.html">Листовки флаера</a></div>
+					<div class="point"><a href="/serve.html">Буклеты со сгибом</a></div>
+					<div class="point"><a href="/serve.html">Дипломы грамоты сертификаты</a></div>
+					<div class="point"><a href="/serve.html">Открытки</a></div>
+					<div class="point"><a href="/serve.html">Приглашения</a></div>
+					<div class="point"><a href="/serve.html">Наклейки</a></div>
+					<div class="point"><a href="/serve.html">Конверты</a></div>
+					<div class="point"><a href="/serve.html">Каталоги брошюры журналы</a></div>
+					<div class="point">
+						 <a href="/serve.html">Календари</a>
+						<ul>
+							<li><a href="/serve.html">Карманный</a></li>
+							<li><a href="/serve.html">Настольный</a></li>
+							<li><a href="/serve.html">Перекидной</a></li>
+							<li><a href="/serve.html">Квартальный</a></li>
+							<li><a href="/serve.html">Настенный</a></li>
+						</ul>
 					</div>
+					<div class="point">
+						 <a href="/serve.html">Блокноты</a>
+					</div>
+					<div class="point">
+						 <a href="/serve.html">Меню</a>
+						<ul>
+							<li><a href="/serve.html">меню на скобах </a></li>
+							<li><a href="/serve.html">меню на болтах </a></li>
+							<li><a href="/serve.html">меню-открытка </a></li>
+							<li><a href="/serve.html">меню-буклет </a></li>
+							<li><a href="/serve.html">меню-салфетка</a></li>
+							<li><a href="/serve.html">чайные / кофейные / винные / барные и пр. карты</a></li>
+							<li><a href="/serve.html">тейбл-тенты</a></li>
+						</ul>
+					</div>
+
 				</div>
-				<a href="" title="">
-					<span>КАЛЕНДАРИ
-						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-							</svg>
-					</span>
-				</a>
-			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
-					</div>
-				</div>
-				<a href="" title="">
-					<span>ИНТЕРЬЕР
-						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-							</svg>
-					</span>
-				</a>
-			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
-					</div>
-				</div>
-				<a href="" title="">
-					<span>СУВЕНИРЫ
-						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-							</svg>
-					</span>
-				</a>
-			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
-					</div>
-				</div>
-				<a href="" title="">
+				<a href="/serve.html" title="">
 					<span>ПОЛИГРАФИЯ
 						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
   						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 							</svg>
 					</span>
 				</a>
+				<div class="line">
+					<div></div>
+				</div>
 			</li>
-			<li>
-				<div class="window">
-					<div class="col">
-						<div class="tab">
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-								
-								</span>
-								</a>
-							</article>
-							<article>
-								<a href="" title="">
-								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
-								</p>
-								<span>
-								Заказать
-
-								</span>
-								</a>
-							</article>
-								
-							
-							
-						</div>
-					</div>
-					<div class="col">
-						
+			<li class="relative">
+				<div class="window list">
+					<div class="point">
+							<div class="point"><a href="/serve.html">Кружки</a></div>
+							<div class="point"><a href="/serve.html">Футболки</a></div>
+							<div class="point"><a href="/serve.html">Толстовки</a></div>
+							<div class="point"><a href="/serve.html">Подушки, текстиль</a></div>
+							<div class="point"><a href="/serve.html">Чехлы</a></div>
+							<div class="point"><a href="/serve.html">Пазлы</a></div>
+							<div class="point"><a href="/serve.html">Магнитные брелки</a></div>
+							<div class="point"><a href="/serve.html">Значки</a></div>
+							<div class="point"><a href="/serve.html">Водяные сувениры</a></div>
+							<div class="point"><a href="/serve.html">Елочные шары</a></div>
+							<div class="point"><a href="/serve.html">Прочие сувениры</a></div>
+							<div class="point">
+								<a href="/serve.html">Бизнес сувениры</a>
+								<ul>
+									<li><a href="/serve.html">Ручки</a></li>
+									<li><a href="/serve.html">Флешки</a></li>
+									<li><a href="/serve.html">Зажигалки портсигары</a></li>
+								</ul>
+							</div>
 					</div>
 				</div>
-				<a href="" title="">
-					<span>ТАБЛИЧКИ
+				<a href="/serve.html" title="">
+					<span>ФОТОСУВЕНИРЫ
 						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
   						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 							</svg>
 					</span>
 				</a>
+				<div class="line">
+					<div></div>
+				</div>
 			</li>
 			<li>
 				<div class="window">
-					<div class="col">
-						<div class="tab">
 							<article>
-								<a href="" title="">
+								<a href="/serve.html" title="">
 								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
+									<img src="img/cup/1.jpg" width="160" height="" alt="">
 								</p>
-								<span>
-								Заказать
+								<h4>
+								Автокружка
 								
-								</span>
+								</h4>
 								</a>
 							</article>
 							<article>
-								<a href="" title="">
+								<a href="/serve.html" title="">
 								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
+									<img src="img/cup/3.jpg" width="160" height="" alt="">
 								</p>
-								<span>
-								Заказать
+								<h4>
+								Белая кружка
 
-								</span>
+								</h4>
 								</a>
 							</article>
 							<article>
-								<a href="" title="">
+								<a href="/serve.html" title="">
 								<p>
-									<img src="img/mainList/1.jpg" width="80" height="" alt="">
+									<img src="img/cup/4.jpg" width="160" height="" alt="">
 								</p>
-								<span>
-								Заказать
+								<h4>
+								Бутылочка
 								
-								</span>
+								</h4>
 								</a>
 							</article>
 							<article>
-								<a href="" title="">
+								<a href="/serve.html" title="">
 								<p>
-									<img src="img/mainList/2.jpg" width="80" height="" alt="">
+									<img src="img/cup/5.jpg" width="160" height="" alt="">
 								</p>
-								<span>
-								Заказать
-
-								</span>
+								<h4>
+								Две белые кружки
+								</h4>
 								</a>
 							</article>
-								
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/6.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружки с принтом на дне
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/7.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка мяч
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/8.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка ручка сердце
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/9.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка с белым полем
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/10.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка с ложкой
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/11.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка хамелеон
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/12.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка принт на дне
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/13.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Кружка с цветным дном
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/14.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Заказать
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/15.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Заказать
+								</h4>
+								</a>
+							</article>
+							<article>
+								<a href="/serve.html" title="">
+								<p>
+									<img src="img/cup/16.jpg" width="160" height="" alt="">
+								</p>
+								<h4>
+								Заказать
+								</h4>
+								</a>
+							</article>
 							
-							
-						</div>
-					</div>
-					<div class="col">
 						
-					</div>
+					
 				</div>
-				<a href="" title="">
-					<span>УСЛУГИ
+				<a href="/serve.html" title="">
+					<span>БИЗНЕС-СУВЕНИРЫ
 						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
   						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 							</svg>
 					</span>
 				</a>
+				<div class="line">
+					<div></div>
+				</div>
+			</li>
+			<li class="relative">
+				<div class="window list">
+					<div class="point"><a href="/serve.html">Постеры и плакаты</a></div>
+					<div class="point"><a href="/serve.html">Печать на холсте</a></div>
+					<div class="point"><a href="/serve.html">Модульные картины</a></div>
+					<div class="point"><a href="/serve.html">Широкоформатная печать</a></div>
+				</div>
+				<a href="/serve.html" title="">
+					<span>ИНТЕРЬЕР
+						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+					</span>
+				</a>
+				<div class="line">
+					<div></div>
+				</div>
+			</li>
+			<li class="relative">
+				<div class="window list">
+					<div class="point"><a href="/serve.html">Таблички на памятники</a></div>
+					<div class="point">
+						<a href="/serve.html">Багетная мастерская</a>
+						<ul>
+							<li><a href="/serve.html">Печать на холсте</a></li>
+							<li><a href="/serve.html">Модульные картины</a></li>
+							<li><a href="/serve.html">Оформление в багет</a></li>
+						</ul>
+					</div>
+					<div class="point"><a href="/serve.html">Модульные картины</a></div>
+					<div class="point"><a href="/serve.html">Широкоформатная печать</a></div>
+				</div>
+				<a href="/serve.html" title="">
+					<span>ПРОЧИЕ УСЛУГИ
+						<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  						<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+					</span>
+				</a>
+				<div class="line">
+					<div></div>
+				</div>
 			</li>
 		</ul>
 	</nav>
@@ -650,14 +508,125 @@
 	-->
 	<div class="serviceBanner">
 		<div class="text">
-			Описание услуги
+			Заказ календа
 		</div>
 	</div>
 
-	<div class="products">
+	<div class="product">
 		<article>
 			<div class="pic">
-				<img src="" alt="">
+				<img src="/img/cup/1.jpg" width="220" alt="">
+			</div>
+			<h1 class="name">Name</h1>
+			<div class="price">
+				500
+			</div>
+			<div class="descr">
+				Opisanie
+			</div>
+			<a href="/serve.html" class="btn">Заказать</a>
+		</article>
+		<article>
+			<div class="pic">
+				<img src="/img/cup/2.jpg"  width="220" alt="">
+			</div>
+			<h5>Name</h5>
+			<div class="price">
+				500
+			</div>
+			<div class="descr">
+				Opisanie
+			</div>
+			<a href="/serve.html" class="btn">Заказать</a>
+		</article>
+	</div>
+
+	<!--
+		*Конец*Страница каталога товаров
+	-->
+</main>
+<footer>
+	<div class="block line f2">
+		<div class="social">
+			<h6>
+				&nbsp;Мы в социальных сетях:
+				<a href="https://vk.com/colorplanetsamara" title="Вконтакте"><img src="/img/inst.png" width="30"></a>
+				<a href="https://www.instagram.com/colorplanet_samara/" title="Инстаграм"><img src="/img/vk.png" width="30"></a>
+				
+			</h6>
+			
+		</div>
+		<div class="mail">
+			<div style="width: 350px; line-height: 14px">
+				<div class="input-group input-group-sm">
+		  			<input type="text" class="form-control  " placeholder="Подписаться на новости">
+		  			<div class="input-group-append">
+		    		<button class="btn  btn-primary" type="submit">Подписатья</button>
+		  			</div>
+				</div>
+		</div>
+		</div>
+	</div>
+	<div class="block list">
+		<article>
+			<h3>Услуги</h3>
+			<p class="f2"><a href="/serve.html" title="">Печать фотопродукции</a></p>
+			<p><a href="/serve.html" title="" class="f2">Печать полиграфии</a></p> 
+			<p><a href="/serve.html" title="">Интреьерная печать</a></p> 
+			<p><a href="/serve.html" title="">Сувениры с фото</a></p> 
+			<p><a href="/serve.html" title="">Изготовление фотокниг</a></p> 
+		
+		</article>
+		<article>
+			<h3>Помощь</h3>
+			<p><a href="/serve.html" title="">Оплата и доставка</a></p>
+			<p><a href="/serve.html" title="">Вопросы и ответы</a></p> 
+			<p><a href="/serve.html" title="">Требования к мактам</a></p> 
+			<p><a href="/serve.html" title="">Примеры работ</a></p> 
+			<p><a href="/serve.html" title="">Отзывы клиентов</a></p> 
+			<p><a href="/serve.html" title="">Реквизиты</a></p> 
+		</article>
+		<article>
+			<h3>Контактная информация</h3>
+			<p><a href="/serve.html" title="">Фотографии</a></p>
+			<p><a href="/serve.html" title="">Фотографии</a></p> 
+			<p><a href="/serve.html" title="">Фотографии</a></p> 
+			<p><a href="/serve.html" title="">Фотографии</a></p> 
+			
+		</article>
+	</div>
+	<div class="block line">
+		<h6><a href="/serve.html" title=""> &nbsp;&nbsp;Планета цвета</a></h6>
+		<h6><a href="/serve.html" title="">Правила использования</a></h6>
+		<h6><a href="/serve.html" title="">Инфо &nbsp;&nbsp;</a></h6>
+	</div>
+</footer>
+
+</body>
+<script  type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+ $('.carousel').carousel();
+  
+});
+</script>
+<!-- Сам скрипт для React --><script src="/script/slider.js"></script>
+</html>
+
+
+<main>
+	<!--
+		*Страница каталога товаров
+	-->
+	<div class="serviceBanner">
+		<div class="text">
+			Заказ календа
+		</div>
+	</div>
+
+	<div class="product">
+		<article>
+			<div class="pic">
+				<img src="/img/cup/1.jpg" width="220" alt="">
 			</div>
 			<h1 class="name">Name</h1>
 			<div class="price">
@@ -670,7 +639,7 @@
 		</article>
 		<article>
 			<div class="pic">
-				<img src="" alt="">
+				<img src="/img/cup/2.jpg"  width="220" alt="">
 			</div>
 			<h5>Name</h5>
 			<div class="price">
@@ -687,68 +656,3 @@
 		*Конец*Страница каталога товаров
 	-->
 </main>
-<footer>
-	<div class="block line">
-		<div class="social">
-			<h6>
-				&nbsp;Мы в социальных сетях:
-				<a href="" title="">x</a>
-				<a href="" title="">x</a>
-				<a href="" title="">x</a>
-			</h6>
-			
-		</div>
-		<div class="mail">
-			<div style="width: 350px; line-height: 14px">
-				<div class="input-group input-group-sm">
-		  			<input type="text" class="form-control  " placeholder="Подписаться на новости">
-		  			<div class="input-group-append">
-		    		<button class="btn  btn-success" type="submit">Подписатья</button>
-		  			</div>
-				</div>
-		</div>
-		</div>
-	</div>
-	<div class="block list">
-		<article>
-			<h3>Услуги</h3>
-			<p><a href="" title="">Печать фотопродукции</a></p>
-			<p><a href="" title="">Печать полиграфии</a></p> 
-			<p><a href="" title="">Интреьерная печать</a></p> 
-			<p><a href="" title="">Сувениры с фото</a></p> 
-			<p><a href="" title="">Изготовление фотокниг</a></p> 
-		
-		</article>
-		<article>
-			<h3>Помощь</h3>
-			<p><a href="" title="">Оплата и доставка</a></p>
-			<p><a href="" title="">Вопросы и ответы</a></p> 
-			<p><a href="" title="">Требования к мактам</a></p> 
-			<p><a href="" title="">Примеры работ</a></p> 
-			<p><a href="" title="">Отзывы клиентов</a></p> 
-			<p><a href="" title="">Реквизиты</a></p> 
-		</article>
-		<article>
-			<h3>Контактная информация</h3>
-			<p><a href="" title="">Фотографии</a></p>
-			<p><a href="" title="">Фотографии</a></p> 
-			<p><a href="" title="">Фотографии</a></p> 
-			<p><a href="" title="">Фотографии</a></p> 
-			
-		</article>
-	</div>
-	<div class="block line">
-		<h6><a href="" title="">Планета цвета</a></h6>
-		<h6><a href="" title="">Правила использования</a></h6>
-		<h6><a href="" title="">Инфо</a></h6>
-	</div>
-</footer>
-</body>
-<script  type="text/javascript" charset="utf-8">
-$(document).ready(function(){
- $('.carousel').carousel();
-  
-});
-
-</script>
-</html>
