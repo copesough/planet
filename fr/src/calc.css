@@ -1,0 +1,34 @@
+.selector input
+{
+	display: none;
+}
+
+.selector label
+{
+	border-radius: 4px;
+	margin: 0 5px;
+	padding: 2px 5px;
+	cursor: pointer;
+	border: 1px solid green;
+}
+
+.selector label:hover
+{
+	background: orange;
+	border: 1px solid orange;
+	color: white;
+}
+
+.selector .chosen 
+{ 
+	color: white; 
+	background: green;
+	border-radius: 4px;
+	margin: 0 5px;
+	padding: 2px 5px;
+}
+
+.car
+{
+	width: 700px;
+}

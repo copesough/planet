@@ -1,0 +1,54 @@
+/* serve.html  Страница услуги*/
+
+.serve
+{
+	display: flex;
+}
+
+		
+.serve .view
+{
+  
+}	
+
+.serve .properties
+{
+	margin: 2px 10px;
+}
+
+.serve .descr
+{
+	
+}
+
+.serve .name
+{
+
+}
+
+.serve .price
+{
+	
+}
+
+.serve .bonus
+{
+	
+}
+
+
+
+.serve .header
+{
+	
+}
+
+.serve input
+{
+	
+}
+
+.serve button
+{
+	
+}

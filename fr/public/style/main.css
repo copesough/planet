@@ -1,0 +1,451 @@
+
+/* #64bb46 
+   #014efc
+	
+*/
+
+p
+{
+	margin: 0;
+}
+ul
+{
+	margin: 0;
+}
+
+/*
+353A3E 
+333
+rgb(54, 70, 87)
+*/
+
+.relative
+{
+	position: relative;
+}
+.mainMenu .menu  {display: flex; justify-content: center;}
+
+.mainList
+{
+	margin: 0 0 5px 0;
+}
+.mainList .menu {display: flex; justify-content: center;}
+header .logo 
+ {
+ 	display: flex; 
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+
+/*
+Меню Доставка оплата корзина
+*/
+.mainMenu .menu li, .mainList .menu li 
+{list-style-type: none;}
+.mainMenu .menu li
+{
+	padding: 11px 5px;
+}
+.mainMenu .menu li a
+{
+	
+	margin: 0 7px;
+}
+/*
+Меню список товаров
+*/
+.mainList ul.menu
+{
+	display: flex;
+	background: #0e4779;
+	position: relative;
+	}
+
+
+
+
+
+/*
+.window - всплывающее окно со списком услуг
+article - "карточка" услуги
+*/
+
+.mainList li .window
+{position: absolute;
+	display: none;
+	flex-wrap: wrap;
+	z-index: 2;
+	background: #dfefff;
+	top: 45px;
+	left: 10%;
+	width: 80%;
+	padding: 7px;
+	border: 2px solid rgb(154, 170, 187);
+}
+
+.mainList li:hover .window,
+.mainList .menu .window:hover
+{
+	display: flex;
+	
+}
+
+
+/*  list  окно со списком .window.list*/
+
+.mainList li .window.list
+{
+	position: absolute;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: start;
+	z-index: 2;
+	background: white;
+	color: black;
+	font-weight: bold;
+	top: 45px;
+	left: 10%;
+	min-width: 300px;
+	
+	padding: 7px;
+	margin-left: -50px;
+	border: 2px solid rgb(154, 170, 187);
+}
+.mainList  .window ul
+{
+	padding-left: 14px;
+}
+.mainList   .window ul a
+{
+	padding: 0;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	
+
+}
+
+.mainList  .window.list a
+{
+	color: #022d53;
+}
+
+.window .point
+{
+	border-bottom: 1px dashed black;
+	padding: 5px 0;
+}
+
+.mainList .menu .window.list  a
+{
+	padding: 0;
+}
+
+.mainList li .window.list h4
+{
+	color: black;
+}
+
+.mainList li:hover .window.list,
+.mainList .menu .window.list:hover
+{
+	display: flex;
+	
+}
+
+
+
+/*-----------------------------*/
+
+.mainList .menu li>a 
+{
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 5px;
+	padding: 11px 0;
+	font-weight: bold;
+
+}
+
+.mainList .menu li
+{
+	
+}
+.mainList .menu li:hover
+{
+	/*background: white;*/
+}
+
+.mainList .menu li svg
+{
+	transition: transform 0.5s;
+}
+
+.mainList .menu li:hover svg
+{
+	transform: rotate(-90deg);
+}
+
+
+
+
+
+.mainList li .line
+{
+	width : 100%;
+	height: 3px;
+}
+
+
+
+.mainList li .line>div{
+	margin-left: 50%;
+	width: 0;
+	height: 3px;
+	background: white;
+	transition: width 0.5s, margin 0.5s;
+
+}
+
+.mainList li:hover .line>div{
+	width: 100%;
+	margin-left: 0;
+
+}
+
+
+
+.mainList .menu .window article
+{
+	margin: 5px;
+	background: white;
+	padding: 5px;
+}
+
+.mainList .menu .window article img
+{
+	border: 1px solid #ccc;
+}
+
+
+/*---------------!!!!!!!------*/
+.mainList .menu .window article h4
+{
+	margin: 5px 0;
+	color: #111;
+	text-align: center;
+	font-size: 14px;
+}
+.mainList .menu .window article:hover
+{
+	border: 2px solid #777;
+	padding: 3px;
+}
+
+.mainList .menu .window article p
+{
+	
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+header, main, footer, .banner
+{
+	max-width: 1490px;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+
+
+header
+{
+	
+}
+
+.logo .input-group
+{
+	width: 300px;
+}
+footer {}
+/* Блок с логотипом поиском и телефоном*/
+.banner
+{
+	text-align: center;
+	background: #022d53;
+	padding: 6px 0;
+	font-weight: bold;
+	color: red;
+}
+
+header .logo
+{
+	height: 110px;
+	background: linear-gradient(#1059fc, #dde7ff);
+}
+
+header .logo>div
+{
+
+}
+header .number {}
+
+.shopList
+{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-around;
+}
+
+.shopList article
+{
+	border: 1px solid #ccc;
+	position: relative;
+	margin: 10px;
+	padding: 2px;
+	background: #eee;
+}
+.shopList article img
+{
+	transition-property: margin-left;
+  	transition-duration: 4s;
+  	transition-delay: 2s;
+  	margin-left:  0px;
+}
+.shopList article img:hover
+{
+	transition-property: margin-left;
+  	transition-duration: 4s;
+  	transition-delay: 2s;
+  	font-size: 14px;
+}
+
+.shopList h3
+{
+	position: absolute;
+	padding: 5px 10px;
+	bottom: 9px;
+	left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 4px;
+
+}
+footer
+{
+	background: #0e4779;
+	padding: 10px 0;
+	color: white;
+
+
+}
+
+footer
+{
+
+}
+
+
+footer .block
+{
+	display: flex;
+	
+}
+
+footer .list 
+{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+footer .line {justify-content: space-between;}
+
+footer .line
+{
+	padding: 5px;
+}
+
+
+.carousel-inner
+{
+	height: 370px;
+}
+.carousel-item
+{
+	position: relative;
+}
+
+.carousel-item .descr
+{
+	position: absolute;
+	top: 30px;
+	right: 90px;
+	opacity: 0.5;
+	padding: 6px 10px;
+	background: white;
+	border-radius: 3px
+}
+
+.carousel-item img
+{margin-top: -240px;}
+
+main .carousel-item .descr h3
+{
+	color: black;
+	font-size: 26px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon
+{
+	width: 35px;
+	height: 35px;
+}
+/* page.html Страница каталога определенного вида услуг*/
+
+.serviceBanner
+{
+
+}
+
+.serviceBanner .text
+{
+	
+}
+
+.products	
+{
+	display: flex;
+}
+
+.products	h5
+{
+
+}
+.products	.pic
+{
+
+}
+
+.products	.price
+{
+
+}
+
+.products	.descr
+{
+
+}
+
+.products	.button
+{
+
+}
+
+
+
+
+

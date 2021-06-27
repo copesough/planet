@@ -1,0 +1,115 @@
+/* 
+ css шрифтов цвета стили
+
+ перенести шрифты из main сюда
+*/
+
+html	{font-family: arial;}
+
+/*
+
+*/
+a {
+	color: gray;
+	text-decoration: none;
+}
+
+h6 {margin: 0;}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+h3 {font-size: 14px; font-weight: normal;}
+
+.f1
+{
+	color: black;
+}
+.window.list a:hover
+{
+	text-decoration: underline;
+}
+a>.f1:hover, a.f1:hover
+{
+	text-decoration: underline;
+}
+
+.f2
+{
+	color: white;
+}
+
+.banner a
+{
+	color: red;
+	text-decoration: none;
+}
+
+.mainMenu .menu li a
+{
+	color: #353A3E;
+	font-size: 14px;
+}
+.mainMenu .menu li a:hover
+{
+	text-decoration: underline;
+}
+
+
+.mainList ul.menu li a 
+{
+	text-decoration: none;
+	color: white;
+}
+
+.shopList article h3
+{
+	color: white;
+	background: #e83;
+}
+footer h3
+{
+	color: white;
+}
+
+footer  a, footer a:hover
+{color: white;}
+footer .block article h3
+{
+	font-size: 18px;
+}
+
+footer .social h6
+{
+	font-size: 18px;
+}
+
+.name
+{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.price
+{
+
+}
+
+.bonus
+{
+
+}
+
+.descr
+{
+
+}
+
+.header
+{
+
+}
+
+button {}
