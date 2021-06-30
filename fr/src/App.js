@@ -6,28 +6,16 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+//-----------
+
+
+
+import InputSlider from './slider.js'
 
 
 
 
-class Calc extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state={ size:0, paper: 0, connect: 0, plastic: 0,  quant: 1}
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-
-
-  handleChange(event) {
-    this.setState({quant: event.target.value});
-  }
-
-render() {
-
-
-function Selector(props,this)
+function Selector(props)
 {
   function selectorType(e)
   {
@@ -35,7 +23,7 @@ function Selector(props,this)
     switch(props.name)
     {
       case 'size':
-      this.setState( {size: props.value} )
+      props.object.setState( {size: props.value} )
       break;
 
       case 'paper':
@@ -50,23 +38,41 @@ function Selector(props,this)
       props.object.setState( {plastic: props.value} )
       break;
 
+      case 'width':
+      props.object.setState( {width: props.value} )
+      break;
+
       
     }           
   }
   
   return (
-    <label 
+    <label className={(props.chosen=="one") ? "chosen" : ""}
            onClick={ selectorType }
     >
         {props.text}
         <input type="radio" name={props.name} value={props.value} />
-        ---{this.state.size}---55
+       
     </label>
 
   )
 }
 
+class Calc extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state={ size:0, paper: 0, connect: 0, width: 0, plastic: 0,  quant: 1, value: 0}
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+
+
+  handleChange(event) {
+    this.setState({quant: event.target.value})
+  }
+
+render() {
 
 return(
 <div className="calc">
@@ -74,47 +80,45 @@ return(
   <form>
     
     <h6>Сменить товар</h6>
----{this.state.size}---
+
     <div className="selector">
-      <Selector   name="size" value="1" text="А4(ч.б.)"  />
-      <Selector   name="size" value="2" text="А4(цвет)"  />
-      <Selector   name="size" value="3" text="А3(ч.б.)"  />
-      <Selector   name="size" value="4" text="А3(цвет)"  />
+      <Selector  chosen={this.state.size==5 ? "one" : ""} name="size" value="5" text="А4(ч.б.)" object={this} />
+      <Selector   chosen={this.state.size==20 ? "one" : ""} name="size" value="20" text="А4(цвет)" object={this} />
+      <Selector   chosen={this.state.size==60 ? "one" : ""} name="size" value="60" text="А3(ч.б.)" object={this} />
+      <Selector   chosen={this.state.size==75 ? "one" : ""} name="size" value="75" text="А3(цвет)" object={this} />
     </div>
     <h6>Выберите бумагу</h6>
     <div className="selector">
-      <Selector   name="paper" value="80" text="80гр.м2"  />
-      <Selector   name="paper" value="130" text="130гр.м2"  />
-      <Selector   name="paper" value="200" text="200гр.м2"  />
-      <Selector   name="paper" value="300" text="300гр.м2"  />
-      <Selector    name="paper" value="samokleika" text="Самоклейка"  />
-      <Selector   name="paper" value="desiner" text="Дизайнерская бумага"  />
+      <Selector   chosen={this.state.size==1 ? "one" : ""} name="paper" value="1" text="80гр.м2" object={this} />
+      
     </div>
-    <h6>Выберите скреплени</h6>
+    <h6>Брошюровка</h6>
     <div className="selector">
-      <Selector   name="connect" value="no" text="Не требуется"  />
-      <Selector  name="connect" value="hard" text="Твердый переплет"  />
-      <Selector   name="connect" value="plastic" text="Брошюровка на пластиковую пружину"  />
-      <Selector   name="connect" value="metall" text="Брошюровка на металлическую пружину"  />
+      <Selector   chosen={this.state.connect==0 ? "one" : ""} name="connect" value="0" text="Нет" object={this} />
+      <Selector   chosen={this.state.connect==1 ? "one" : ""} name="connect" value="1" text="Брошюровка на пластиковую пружину" object={this} />
+      <Selector   chosen={this.state.connect==2 ? "one" : ""} name="connect" value="2" text="Брошюровка на металлическую пружину" object={this}  />
+      <Selector   chosen={this.state.width==180 ? "one" : ""} name="width" value="180" text="До 50 листов" object={this} />
+      <Selector   chosen={this.state.width==240 ? "one" : ""} name="width" value="240" text="До 100 листов" object={this}  />
+      <Selector   chosen={this.state.width==300 ? "one" : ""} name="width" value="300" text="До 200 листов" object={this} />
+  
     </div>
     <h6>Ламинация</h6>
     <div className="selector">
-      <Selector  name="plastic" value="no" text="Не требуется"  />
-      <Selector   name="plastic" value="60" text="Пленкой 60мкм"  />
-      <Selector   name="plastic" value="125" text="Пленкой 125мкм"  />
-      <Selector   name="plastic" value="250" text="Пленкой 250мкм"  />
+      <Selector  chosen={this.state.plastic==0 ? "one" : ""} name="plastic" value="0" text="Не требуется" object={this} />
+      <Selector   chosen={this.state.plastic==50 ? "one" : ""} name="plastic" value="50" text="С двух сторон А4" object={this} />
+      <Selector   chosen={this.state.plastic==100 ? "one" : ""} name="plastic" value="100" text="С двух сторон А3" object={this} />
     </div>
     <h6>Количество</h6>
     <input type="text" name="" value={this.state.quant} onChange={this.handleChange} /><span>шт</span>
     <br />
+    
+   <InputSlider />
+   
     <h6>
-      <span>Итого:</span>
-      &nbsp;&nbsp;&nbsp; {this.state.size}
-      - - {this.state.paper}
-       - - {this.state.connect}
-        - - {this.state.plastic}
-      - - {this.state.quant}
-      - - <button>Заказать</button>
+
+      <span>Итого: </span>
+      {(this.state.quant) * (this.state.size)} руб.
+       <button>Заказать</button>
     </h6>
   </form>
 
